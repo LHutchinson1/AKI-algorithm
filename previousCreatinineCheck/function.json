@@ -1,0 +1,24 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "documentDB",
+      "name": "checkPreviousMeasurements",
+      "databaseName": "watchermeasurements",
+      "collectionName": "watcherprocessedcreatinine",
+      "connection": "decmtdevwatchercosmosdb_DOCUMENTDB",
+      "direction": "in"
+    }
+  ],
+  "disabled": false
+}
